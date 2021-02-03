@@ -4,11 +4,11 @@ import (
 	"encoding/base64"
 	"errors"
 	"fmt"
+	awskms "github.com/kforsthoevel/kubesec/aws/kms"
+	"github.com/kforsthoevel/kubesec/crypto/aes"
+	googlecloudkms "github.com/kforsthoevel/kubesec/gcp/kms"
+	"github.com/kforsthoevel/kubesec/gpg"
 	log "github.com/sirupsen/logrus"
-	awskms "github.com/shyiko/kubesec/aws/kms"
-	"github.com/shyiko/kubesec/crypto/aes"
-	googlecloudkms "github.com/shyiko/kubesec/gcp/kms"
-	"github.com/shyiko/kubesec/gpg"
 	"strings"
 )
 
